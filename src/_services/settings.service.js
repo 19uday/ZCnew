@@ -66,7 +66,7 @@ function heartBeat(enabled, hbinterval, maxMsgs) {
     };
     console.log(requestOptions);
 
-    return fetch(`http://${hostName}/heartBeatSettings`, requestOptions)
+    return fetch(`http://${hostName}/set/heartBeatSettings`, requestOptions)
         .then(handleResponse)
 }
 

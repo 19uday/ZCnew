@@ -109,14 +109,6 @@ class HomePage extends React.Component {
 
     render() {
         return(
-		<div>
-			<div>
-			{this.state.modal === true && 
-				<div className="overlayModal">
-					<h4 className="overlayText">Close other tabs and refresh the current tab.</h4>
-				</div>
-			}
-			</div>
             <Layout selected={this.props.match.params.id}>
                 {
                     this.props.match.params.id ?
@@ -128,7 +120,6 @@ class HomePage extends React.Component {
                     : <Commissioning />
                 }
             </Layout>
-		</div>
         )
     }
     
