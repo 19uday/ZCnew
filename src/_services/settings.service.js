@@ -50,7 +50,7 @@ function threshold(maxWindSpeed, maxRainFall, meanWindSpeed, windSpeedTimer) {
         })
     };
 
-    return fetch(`http://${hostName}/threshold`, requestOptions)
+    return fetch(`http://${hostName}/set/threshold`, requestOptions)
         .then(handleResponse)
 }
 
